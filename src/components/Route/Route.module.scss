@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.route {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    &-info {
+        width: max-content;
+    }
+    &-title {
+        @include font650;
+        font-size: 0.75rem;
+        color: $second-color;
+        line-height: 1.3125rem;
+    }
+    &-value {
+        @include font650;
+        font-size: 0.875rem;
+        color: $primary-text-color;
+        line-height: 1.3125rem;
+    }
+}

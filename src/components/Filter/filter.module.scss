@@ -1,0 +1,51 @@
+@import '../../variables.scss';
+
+.filters {
+    width: 14.5rem;
+    height: 15.75rem;
+    grid-column: 0 / 1;
+    padding: 1.25rem;
+    background: #FFF;
+    @include outer-borders;
+}
+.title {
+    @include font650;
+}
+.list {
+    list-style: none;
+}
+.filter {
+    margin-top: 1.25rem;
+}
+.label {
+    font-size: 0.8125rem;
+    font-weight: 450;
+}
+
+@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+    input[type='checkbox'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      @include checkbox-styles;
+    }
+    input[type='checkbox']:after {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        display: block;
+        margin: 0 auto;
+        background-color: inherit;
+        color: $primary-text-color;
+    }
+    input[type='checkbox']:hover, input:focus {
+        outline: $outline-hover;
+    }
+    input[type='checkbox']:checked {
+        border: 1px solid $primary-brand-color;
+    }
+    input[type='checkbox']:checked::after {
+        content: '';
+        background-color: $primary-brand-color;
+    }
+
+}

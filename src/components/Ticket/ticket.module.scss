@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.ticket {
+    width: $ticket-width;
+    height: calc($ticket-width / 2.75);
+    margin-bottom: $gaps;
+    padding: 1.25rem;
+    background-color: white;
+    list-style: none;
+    @include outer-borders;
+}
+.offer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.ticket-price {
+   @include font650;
+   font-size: 1.5rem;
+   color: $primary-brand-color;
+}

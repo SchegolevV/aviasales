@@ -1,0 +1,16 @@
+@import '../../variables.scss';
+
+.load-button {
+    @include tabs-form;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: $primary-brand-color;
+}
+.load-button::after {
+    content: 'показать еще 5 билетов!';
+}
+.load-button:hover, .load-button:focus {
+    outline: $outline-hover;
+}
