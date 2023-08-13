@@ -1,22 +1,5 @@
 @import '../../variables.scss';
 
-.filters {
-    width: 14.5rem;
-    height: 15.75rem;
-    grid-column: 0 / 1;
-    padding: 1.25rem;
-    background: #FFF;
-    @include outer-borders;
-}
-.title {
-    @include font650;
-}
-.list {
-    list-style: none;
-}
-.filter {
-    margin-top: 1.25rem;
-}
 .label {
     font-size: 0.8125rem;
     font-weight: 450;

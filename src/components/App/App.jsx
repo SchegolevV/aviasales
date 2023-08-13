@@ -1,4 +1,4 @@
-import Filter from '../Filter/filter'
+import FilterList from '../FilterList/filterList'
 import Header from '../Header/header'
 import Tabs from '../Tabs/tabs'
 import TicketList from '../TicketList/ticketList'
@@ -10,7 +10,7 @@ const App = () => {
     <main>
       <Header />
       <section className={classes['content-wrapper']}>
-        <Filter />
+        <FilterList />
         <Tabs />
         <TicketList />
       </section>
