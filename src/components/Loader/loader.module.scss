@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.loader {
+    position: absolute;
+    top: 3.6rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+}
+.loader:before {
+    content: '';
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100%;
+    background-color: inherit;
+    outline: solid 3px $primary-brand-color;
+    outline-offset: -2rem ;
+    display: block;
+    animation: loading 2s ease-out 1s infinite;
+}
+
+@keyframes loading {
+  30% {
+    outline-offset: 1rem;
+  }
+
+  50% {
+    outline-offset: -1rem;
+  }
+
+  100% {
+    outline-offset: 2rem;
+    outline-color: rgba(33, 150, 243, 0);
+  }
+}

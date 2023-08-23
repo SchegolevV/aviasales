@@ -20,6 +20,6 @@ body {
   letter-spacing: 0.03125rem;
 }
 main {
-  width: 60rem;
+  max-width: 60rem;
   margin: 0 auto;
 }

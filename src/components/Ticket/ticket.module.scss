@@ -1,13 +1,16 @@
 @import '../../variables.scss';
 
 .ticket {
-    width: $ticket-width;
+    max-width: $ticket-width;
     height: calc($ticket-width / 2.75);
     margin-bottom: $gaps;
     padding: 1.25rem;
     background-color: white;
     list-style: none;
     @include outer-borders;
+    @media (max-width: $media-l) {
+      padding: 0.75rem;
+    }
 }
 .offer {
    display: flex;
@@ -18,4 +21,7 @@
    @include font650;
    font-size: 1.5rem;
    color: $primary-brand-color;
+   @media (max-width: $media-l) {
+      font-size: 1.3rem;
+   }
 }

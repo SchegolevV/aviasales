@@ -28,7 +28,13 @@
     }
     input[type='checkbox']:checked::after {
         content: '';
-        background-color: $primary-brand-color;
+        background-color: inherit;
+        height: 0.6rem;
+        width: 0.3rem;
+        border-bottom: 2px solid $primary-brand-color;
+        border-right: 2px solid $primary-brand-color;
+        transform: skewX(-6deg) rotate(45deg) translate(2px, 1px);
+
     }
 
 }

@@ -1,11 +1,19 @@
 @import '../../variables.scss';
 .content-wrapper {
-    width: min-content;
+    max-width: 47rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 14.5rem 1fr;
     grid-template-rows: 3.125rem 1fr;
     grid-auto-rows: auto;
     gap: $gaps;
-    
+    @media (max-width: $media-l) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        margin: 10px;
+    }
+    @media (max-width: $media-tablet) {
+        margin: 10px;
+    }
 }
+
