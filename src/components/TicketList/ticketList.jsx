@@ -22,7 +22,7 @@ export default function TicketList() {
       {tickets.error && <div className={classes['error']}>{tickets.error}</div>}
       <ul className={classes['ticket-list']}>
         {createTickets()}
-        <LoadButton createMoreTickets={createMoreTickets} />
+        {createTickets().length !== 0 && <LoadButton createMoreTickets={createMoreTickets} />}
       </ul>
     </>
   )

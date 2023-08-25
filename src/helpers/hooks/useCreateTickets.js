@@ -5,7 +5,7 @@ import Ticket from '../../components/Ticket/ticket'
 
 const useCreateTickets = () => {
   const [createdTickets, setCreatedTickets] = useState(5)
-  const tickets = useSelector((state) => state.tickets.currentTickets)
+  const currentTickets = useSelector((state) => state.tickets.currentTickets)
 
   const createMoreTickets = () => {
     setCreatedTickets((state) => (state += 5))
@@ -13,7 +13,7 @@ const useCreateTickets = () => {
 
   const createTickets = () => {
     let key = 1
-    const defTickets = tickets.map((ticket, idx) => {
+    const defTickets = currentTickets.map((ticket, idx) => {
       if (idx < createdTickets) {
         return <Ticket key={key++} {...ticket} />
       } else {
